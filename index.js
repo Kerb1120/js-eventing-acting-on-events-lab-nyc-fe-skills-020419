@@ -6,4 +6,4 @@ function onKeyDown(event) {
   }
 }
 
-dodger.addEventListener('keydown', onKeyDown)
+document.addEventListener('keydown', onKeyDown)
