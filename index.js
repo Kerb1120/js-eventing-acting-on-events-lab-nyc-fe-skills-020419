@@ -6,10 +6,13 @@ function onKeyDown(event) {
     const currentPosition = parseInt(dodger.style.left)
     dodger.style.left = currentPosition - 5 + 'px'
   } else if (event.keyCode === 39) {
-    const currentPosition = parseInt(dodger.style.left)
-    dodger.style.left = currentPosition + 5 + 'px'
+    moveDodgerRight()
   }
 }
 
+function moveDodgerRight() {
+const currentPosition = parseInt(dodger.style.left)
+    dodger.style.left = currentPosition + 5 + 'px'
+}
 // 2 - Add the event listener
 document.addEventListener('keydown', onKeyDown)
